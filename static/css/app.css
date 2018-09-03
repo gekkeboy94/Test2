@@ -1,4 +1,103 @@
-.navbar-brand {
+#home-bg{
+    font-family: 'Playfair Display', serif;
+    height:100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/reading-sunset.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding:0px;
+}
+
+#lecture-bg{
+    font-family: 'Playfair Display', serif;
+    height:100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/daylight-environment-forest-1118667.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding:0px;
+}
+
+#landing-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+
+h1#intro {
+  font-family: 'PT Serif', serif;
+  margin-bottom:0px !important;
+  text-align: center;
+  font-size:100px;
+}
+
+h2#intro2 {
+  font-family: 'PT Serif', serif;
+  margin-top:0px;
+  margin-bottom:30px;
+  font-size:45px;
+  text-align: right;
+}
+
+h3>a{
+  color:white;
+}
+
+h3>a:hover{
+  color:#E25822;
+}
+
+h3#intro3{
+  font-family: 'PT Serif', serif;
+  margin-top:0px;
+  margin-bottom:30px;
+  font-size:20px;
+  text-align: right;
+  color:white;
+}
+
+a.sitebox-link{
+  color:black;
+}
+
+.sitebox{
+  color:black;
+  margin-top:30px;
+  margin-left,margin-right:0px;
+  height: 85vh;
+  width:100vw;
+  border-radius:0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.sitebox2{
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: auto;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+
+
+.navbar{
+  font-size:15px;
+  background:transparent;
+  border-color:transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color:white;
+}
+
+.navbar-inverse .navbar-brand {
   font-size:30px;
-  font-family: 'Satisfy', cursive;
+  color:#E25822;
 }

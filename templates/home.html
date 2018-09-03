@@ -1,31 +1,19 @@
 {% extends 'base.html' %}
-
-{% block breadcrumb %}
-  <li class="breadcrumb-item active">Boards</li>
-{% endblock %}
-
+{% block sitebox %}
 {% block content %}
-  <table class="table">
-    <thead class="thead-inverse">
-      <tr>
-        <th>Board</th>
-        <th>Posts</th>
-        <th>Topics</th>
-        <th>Last Post</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for board in boards %}
-        <tr>
-          <td>
-            <a href="{% url 'board_topics' board.pk %}">{{ board.name }}</a>
-            <small class="text-muted d-block">{{ board.description }}</small>
-          </td>
-          <td class="align-middle">0</td>
-          <td class="align-middle">0</td>
-          <td></td>
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-{% endblock %}
+    <div class="container-fluid">
+      <div id="landing-text">
+        <h1 id="intro">
+          the last manifesto
+        </h1>
+        <h2 id="intro2">
+          A journey to get to the truth.
+        </h2>
+        <h3 id="intro3">
+          <a href="{% url 'home' %}">Join me.</a>
+        </h4>
+      </div>
+    </div>
+
+{% endblock content%}
+{% endblock sitebox %}

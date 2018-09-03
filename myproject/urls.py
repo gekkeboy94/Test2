@@ -19,11 +19,14 @@ from django.urls import path
 
 from boards import views
 from accounts import views as accounts_views
+from lectures import views as lectures_views
 
 urlpatterns = [
     re_path(r'^$', views.home, name='home'),
+    path('lectures/', lectures_views.lectures, name='lectures'),
     path('signup/', accounts_views.signup, name='signup'),
     path('admin/', admin.site.urls),
+    path('boards/', views.boards, name='boards'),
     path('boards/<int:pk>/', views.board_topics, name='board_topics'),
     path('boards/<int:pk>/new/', views.new_topic, name='new_topic'),
 

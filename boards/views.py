@@ -6,9 +6,14 @@ from .forms import NewTopicForm
 from .models import Board, Topic, Post
 
 
+
 def home(request):
     boards = Board.objects.all()
     return render(request, 'home.html', {'boards':boards})
+
+def boards(request):
+    boards = Board.objects.all()
+    return render(request, 'boards.html', {'boards':boards})
 
 def board_topics(request, pk):
     try:
