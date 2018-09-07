@@ -17,7 +17,6 @@
   <body>
 
     {% block body %}
-
       <div class ="container-fluid bgimg" id={% block containerid %}"home-bg"{% endblock containerid %}>
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
@@ -31,9 +30,9 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li><a href=" {% url 'boards' %} ">Boards</a></li>
-                <li><a href=" {% url 'lectures' %} ">Lectures</a></li>
-                <li><a href="#">News Crawler</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href=" {% url 'boards' %} ">Social</a></li>
+                <li><a href=" {% url 'lectures' %} ">Papers</a></li>
                 <li><a href="#">Page 3</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
@@ -44,14 +43,12 @@
           </div>
         </nav>
       {% block sitebox %}
-      <div class="container sitebox">
         <div class="container sitebox2">
         {% block content %}
         {% endblock content %}
-        </div>
+      </div>
       </div>
       {% endblock sitebox %}
-      </div>
     {% endblock body %}
 
   </body>

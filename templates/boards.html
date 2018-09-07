@@ -3,7 +3,6 @@
 {% block containerid %}"lecture-bg"{% endblock containerid %}
 
 {% block content %}
-
     <table class="table">
       <thead class="thead-dark">
         <tr>
@@ -18,6 +17,7 @@
           <tr>
             <td>
               <a class="sitebox-link" href="{% url 'board_topics' board.pk %}">{{ board.name }}</a>
+            </br>
               <small class="text-muted d-block">{{ board.description }}</small>
             </td>
             <td class="align-middle">0</td>
@@ -28,4 +28,5 @@
       </tbody>
     </table>
   </div>
+</div>
 {% endblock %}

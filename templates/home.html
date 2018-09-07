@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
-{% block sitebox %}
+
+{% block sitebox%}
 {% block content %}
     <div class="container-fluid">
       <div id="landing-text">
@@ -10,10 +11,14 @@
           A journey to get to the truth.
         </h2>
         <h3 id="intro3">
-          <a href="{% url 'home' %}">Join me.</a>
+          <a href="#join">Join me.</a>
         </h4>
       </div>
-    </div>
 
+    </div>
+  </div>
+    <div class="container-fluid">
+      <h4 id="join">join</h4>
+    </div>
 {% endblock content%}
-{% endblock sitebox %}
+{%endblock sitebox%}

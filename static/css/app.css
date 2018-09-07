@@ -1,7 +1,7 @@
 #home-bg{
     font-family: 'Playfair Display', serif;
     height:100vh;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/reading-sunset.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/landerimg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,10 +12,7 @@
 #lecture-bg{
     font-family: 'Playfair Display', serif;
     height:100vh;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/daylight-environment-forest-1118667.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/seamless-book-cover-textures-3.jpg');
     position: relative;
     padding:0px;
 }
@@ -65,23 +62,27 @@ a.sitebox-link{
 }
 
 .sitebox{
+  text-align:left;
+  padding:0px;
+  background-image: url('../img/p3.png');
   color:black;
   margin-top:30px;
   margin-left,margin-right:0px;
-  height: 85vh;
+  height: 89vh;
   width:100vw;
-  border-radius:0px;
+  border-radius:3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: rgba(255, 255, 255, 0.5);
 
 }
 
-.sitebox2{
-  margin: auto;
+.sitebox2 {
+  background-image: url('../img/retina_wood.png');
+  margin-top:10px;
+  border-radius:15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: auto;
+  width: 40%;
   height: 90%;
-  background-color: rgba(255, 255, 255, 0.9);
 
 }
 
